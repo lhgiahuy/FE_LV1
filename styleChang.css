@@ -65,9 +65,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   height: 210px;
   width: 547px;
-  padding-bottom: 30px;
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 .about__item button {
@@ -274,6 +271,24 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background: #fff;
 }
+
+.clients__area {
+  background: #fafafa;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.clients__area--content {
+  margin-bottom: 60px;
+}
+
+.clients__area--content h2 {
+  color: #040c2c;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 0.5rem;
+}
+
 .clients__area--content p {
   font-size: 16px;
   font-weight: 400;
