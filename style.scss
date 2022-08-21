@@ -281,7 +281,7 @@ nav {
     }
 
     .icon {
-        top: 12px;
+        top: 6px;
         position: relative;
         color: #fff;
         transition: all 0.5s;
@@ -672,6 +672,7 @@ h6 {
 .about__item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about__item--content {
@@ -748,6 +749,7 @@ h6 {
     position: relative;
     display: block;
     justify-content: center;
+    margin-top: 100px;
 }
 
 // SERVICE
@@ -832,8 +834,11 @@ h6 {
 
 .card_icon {
     position: relative;
-    top: 30%;
+    top: 10%;
     font-weight: 600;
+    .fa-solid, .fas{
+        font-size: 30px;
+    }
 
 }
 
@@ -873,6 +878,10 @@ h6 {
 .testimonial__content {
     position: relative;
     text-align: center;
+}
+
+.swiper{
+    padding: 150px 0 100px;
 }
 
 .swiper-wrapper {
