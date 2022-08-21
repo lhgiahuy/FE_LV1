@@ -354,6 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog__bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blog__card {
