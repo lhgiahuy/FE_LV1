@@ -325,12 +325,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog__bottom{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-wrap: wrap;
-
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 20px;
 }
 .blog__card{
     cursor: pointer;
