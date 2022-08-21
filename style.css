@@ -70,6 +70,7 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
+  margin-left: 80px;
 }
 
 .navbar__menu--menu {
