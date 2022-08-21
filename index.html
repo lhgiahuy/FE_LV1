@@ -170,6 +170,32 @@
                 </div>
             </div>
         </section>
+        <section class="counter">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="counter__items">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3 data-val="200">200</h3>
+                        <p>Total Projects</p>
+                    </div>
+                    <div class="counter__items">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                        <h3 data-val="123">123</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="counter__items">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h3 data-val="4">4</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="counter__items">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h3 data-val="10">10</h3>
+                        <p>Award Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="container">
                 <div class="contact__container">
@@ -268,6 +294,24 @@ menu.addEventListener("click", () => {
 <script>
     $(document).on('click', '.menu li', function(){
         $(this).addClass('active').siblings().removeClass('active');
+    });
+</script>
+<script>
+    let valueDisplays = document.querySelectorAll(".counter__items h3");
+    let interval = 15;
+
+    valueDisplays.forEach((valueDisplays) => {
+        let start = 0;
+        let end = parseInt(valueDisplays.getAttribute("data-val"));
+
+        let duration = Math.floor(interval / end);
+        let counter = setInterval(function(){
+            start += 1;
+            valueDisplays.textContent= start;
+            if (start == end){
+                clearInterval(counter);
+            }
+        }, duration);
     });
 </script>
 </html>

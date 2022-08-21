@@ -91,6 +91,7 @@ nav {
     background-color: #fff;
     z-index: 10000;
     opacity: 0;
+    visibility: hidden;
     li {
         padding: 20px 20px 15px;
         background-color: #fff;
@@ -102,6 +103,7 @@ nav {
 .navbar__menu--menu.active{
     top: 63px;
     opacity: 1;
+    visibility: visible;
     transition: all 0.5s;
 }
 
@@ -188,6 +190,7 @@ nav {
     min-height: 100vh;
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
 .home__background {
@@ -297,6 +300,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .portfolio__title{
@@ -466,6 +470,36 @@ nav {
     
 }
 
+.counter{
+    padding: 120px 0;
+    background: #fafafa;
+    text-align: center;
+    .subcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .counter__items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            flex: 0 0 50%;
+            max-width: 100%;
+            i{
+                font-size: 35px;
+                margin-bottom: 25px;
+            }
+            h3{
+                margin-bottom: 25px;
+                font-size: 35px;
+            }
+            
+        }
+    }
+}
+
 #contact{
     padding: 120px 0;
     .contact__container{
@@ -586,6 +620,11 @@ footer{
     form{
         grid-template-columns: repeat(2, 1fr)!important;
     }
+
+    .counter__items{
+        flex: 0 0 25%!important;
+        max-width: 25%!important;
+    }
 }
 
 @media (min-width: 992px){
@@ -604,6 +643,7 @@ footer{
         justify-content: center;
         color: black;
         opacity: 1;
+        visibility: visible;
         li{
             margin-left: 35px;
             padding: 0;
