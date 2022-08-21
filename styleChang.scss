@@ -330,11 +330,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog__card{
     cursor: pointer;
-    // display:flex;
-    // flex-direction: column;
     border: 0.1px solid #797979;
     height:auto;
-    // margin: 0;
     position:relative;
     width: 350px;
     overflow:hidden;
@@ -354,14 +351,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card__img{
     width: auto;
-    // max-height: 100%;
     overflow:hidden;
-    // background: #fff;
-    // // border-radius: 5px;
-    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display:contents;
-    // flex-direction: column;
-    // z-index: 0;
     position: relative;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
